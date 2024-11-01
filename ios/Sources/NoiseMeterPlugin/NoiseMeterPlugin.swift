@@ -20,4 +20,5 @@ public class NoiseMeterPlugin: CAPPlugin, CAPBridgedPlugin {
             "value": implementation.echo(value)
         ])
     }
+
 }

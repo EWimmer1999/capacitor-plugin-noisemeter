@@ -1,3 +1,9 @@
 export interface NoiseMeterPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+
+  start():Promise<void>
+  startRecording(): Promise<void>
+  stop(): Promise<void>
+  getNoiseLevel(): Promise<{decibels: number}>
+
 }
+

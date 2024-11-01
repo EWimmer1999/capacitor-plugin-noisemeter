@@ -7,4 +7,23 @@ export class NoiseMeterWeb extends WebPlugin implements NoiseMeterPlugin {
     console.log('ECHO', options);
     return options;
   }
+
+  async start(): Promise<void> {
+      console.log("Start!")
+  }
+
+  async startRecording(): Promise<void> {
+      console.log("Recording!")
+  }
+
+  async stop(): Promise<void> {
+      console.log("Stop!")
+  }
+
+  async getNoiseLevel(): Promise<{ decibels: number; }> {
+      console.log("Noiselevel");
+      const decibels = 50;
+      return { decibels }; 
+  }
+
 }
